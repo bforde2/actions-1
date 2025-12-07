@@ -13,7 +13,7 @@ jobs:
       run: cowsay -F dragon "Run for cover, I'm a DRAGON....RAWR" >> dragon.txt
 
     - name: Upload the Dragon text file
-      uses: actions/upload-artifact@latest
+      uses: actions/upload-artifact@v5
       with:
         name: dragon-text-file
         path: dragon.txt
@@ -23,7 +23,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Download the Dragon text file
-      uses: actions/download-artifact@latest
+      uses: actions/download-artifact@v5
       with:
         name: dragon-text-file
     
@@ -35,7 +35,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Download the Dragon text file
-      uses: actions/download-artifact@latest
+      uses: actions/download-artifact@v5
       with:
         name: dragon-text-file
 
